@@ -34,10 +34,10 @@ namespace RazorPagesMovie
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1/2_0);
 
             services.AddDbContext<RazorPagesMovieContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("RazorPagesMovieContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("********************")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
