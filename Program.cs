@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using RazorPagesMovie.Models;
+using *************.Models;
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace RazorPagesMovie
+namespace ***************
 {
     public class Program
     {
@@ -20,7 +20,7 @@ namespace RazorPagesMovie
 
                 try
                 {
-                    var context = services.GetRequiredService<RazorPagesMovieContext>();
+                    var context = services.GetRequiredService<*************eContext>();
                     context.Database.Migrate();
                     SeedData.Initialize(services);
                 }
